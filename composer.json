@@ -1,35 +1,35 @@
 {
-    "name": "vendor/package",
+    "name": "brksreginaldo/graphqlr",
     "description": "",
     "keywords": [],
     "homepage": "",
     "authors": [
         {
-            "name": "",
-            "email": ""
+            "name": "Reginaldo Junior",
+            "email": "reginaldo@deltacoding.xyz"
         }
     ],
     "require": {
-        "illuminate/support": "~5.5"
+        "illuminate/support": "~5.5",
+        "folklore/graphql": "~1.0.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0",
-        "orchestra/testbench": "~3.5"
+        "phpunit/phpunit": "~6.0"
     },
     "autoload": {
        "psr-4": {
-            "Vendor\\Package\\": "src/Package"
+            "BRKsReginaldo\\GraphQLR\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendor\\Package\\Tests\\": "tests/"
+            "BRKsReginaldo\\GraphQLR\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\Package\\ServiceProvider"
+                "BRKsReginaldo\\GraphQLR\\GraphQLRServiceProvider"
             ]
         }
     },

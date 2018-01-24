@@ -2,14 +2,14 @@
 
 namespace Vendor\Package\Tests;
 
-use Vendor\Package\PackageServiceProvider;
-use Orchestra\Testbench\TestCase;
+use PHPUnit\Framework\TestCase;
+use BRKsReginaldo\GraphQLR\GraphQLRServiceProvider;
 
 abstract class PackageTestCase extends TestCase
 {
 
     protected function getPackageProviders($app)
     {
-        return [PackageServiceProvider::class];
+        return [GraphQLRServiceProvider::class];
     }
 }

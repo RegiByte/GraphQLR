@@ -66,7 +66,8 @@ trait RelationshipResolver
                     })) > 0;
             })
             ->filter(function ($info, $relationship) {
-                return preg_match('/^(Modules|SysB)/', $info['model']);
+		$namespace = str_replace('\\', '', app()->getNamespace());
+                return preg_match("/^(Modules|$namespace)/", $info['model']);
             })
             ->map(function ($info, $relationship) {
                 $originalInfo = $info;

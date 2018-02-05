@@ -70,7 +70,7 @@ trait DoQueries
      */
     public function resolveWhere($arg, $value)
     {
-        if ($arg != 'id' && preg_match('/^\[(like|not\slike|\<|\>|\!\=|\<\>)\]\s([a-zA-Z0-9-_%]+)/i', $value, $matches)) {
+        if ($arg != 'id' && preg_match('/^\[(like|not\slike|\<|\>|\!\=|\<\>)\]\s([a-zA-Z0-9-_% ]+)/i', $value, $matches)) {
             $this->query->where($arg, $matches[1], $matches[2]);
         } else {
             $this->query->where($arg, $value);

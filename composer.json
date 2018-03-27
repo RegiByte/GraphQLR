@@ -2,7 +2,6 @@
     "name": "brksreginaldo/graphqlr",
     "description": "",
     "keywords": [],
-    "homepage": "",
     "authors": [
         {
             "name": "Reginaldo Junior",
@@ -11,7 +10,7 @@
     ],
     "require": {
         "illuminate/support": "~5.5",
-        "folklore/graphql": "~1.0.0",
+        "folklore/graphql": "dev-develop",
         "nesbot/carbon": "~1.20"
     },
     "require-dev": {
@@ -38,5 +37,4 @@
         }
     },
     "license": "MIT"
-    
 }
